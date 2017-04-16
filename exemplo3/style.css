@@ -1,0 +1,26 @@
+body {
+    background-color: #6BBF88;
+}
+
+div {
+    width: 800px;
+    margin: 0 auto;
+}
+
+p {
+    font-family: monospace;
+    font-size: 50px;
+    margin-top: 170px;
+    color: #222B39;
+    text-align: center;
+}
+
+input {
+    background: transparent;
+    border: 2px solid #222B39;
+    width: 100%;
+    height: 30px;
+    margin: 20px auto 0 auto;
+    font-size: 20px;
+    color: #fafafa;
+}
