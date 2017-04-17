@@ -4,12 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Exemplo 3</title>
+    <title>Exemplo 5</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div id="app">
-        <p>{{ sayHello() }}</p>
+        <p>{{ sayHello() }} - <a v-bind:href="link" target="_blank">Google</a></p>
+        <hr>
+        <p v-html="finishedLink">{{ finishedLink }}</p>
     </div>
 
     <script src="vue.js"></script>
