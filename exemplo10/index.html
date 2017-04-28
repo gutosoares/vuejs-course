@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Exemplo 10</title>
+    <style>
+        .demo {
+            height: 100px;
+            width: 100px;
+            display: inline-block;
+            background-color: gray;
+            margin: 10px;
+        }
+
+        .red {
+            background-color: red;
+        }
+
+        .blue {
+            background-color: blue;
+        }
+
+        .green {
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <div id="app">
+        <div class="demo" @click="attachRed = !attachRed" :class="{red: attachRed}"></div>
+        <div class="demo" @click="attachBlue = !attachBlue" :class="{blue: attachBlue}"></div>
+        <div class="demo" @click="attachGreen = !attachGreen" :class="{green: attachGreen}"></div>
+    </div>
+
+    <script src="https://unpkg.com/vue"></script>
+    <script>
+        new Vue({
+            el: '#app',
+            data: {
+                attachRed: false,
+                attachBlue: false,
+                attachGreen: false
+            }
+        });
+    </script>
+</body>
+</html>
